@@ -1,0 +1,87 @@
+footer{
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .footer-up{
+        display: flex;
+        .link-list{
+            .my-col{
+                .my-list{
+                    h2{
+                        padding-bottom: 10px;
+                        color: white;
+                    }
+                    ul{
+                        padding: 0;
+                        li{
+                            list-style: none;
+                            a{
+                                color: gray;
+                                text-decoration: none;
+                                &:hover{
+                                    color: #0282f9;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .image{
+        position: absolute;
+        right: 0;
+        top: 5%;
+        img{
+            width: 80%;
+        }
+    }
+
+    .footer-social{
+        position: sticky;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 99;
+        height: 70px;
+        background-color: #303030;
+        .footer-down{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                padding: 10px;
+                background-color: #303030;
+                border: 2px solid #0282f9;
+                color:white
+            }
+            .social{
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h4{
+                    color: #0282f9;
+                    padding-right: 15px;
+                    font-weight: bold;
+                }
+                ul{
+                    display: flex;
+                    list-style-type: none;
+                    padding: 5px;
+
+                    li{
+                        margin: 0 5px;
+
+                        &:hover{
+                            filter: brightness(200%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
