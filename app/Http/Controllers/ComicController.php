@@ -14,7 +14,11 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        $title = 'home';
+        $comicsArray = config('comics');
+        $arrayComic = Comic::All();
+    
+        return view('pages.crud.index', compact('title', 'comicsArray', 'arrayComic'));
     }
 
     /**
