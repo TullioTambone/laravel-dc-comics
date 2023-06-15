@@ -18,6 +18,13 @@
         <a href="{{ route('comics.edit', $comic) }}">
             <button class="btn btn-primary">modifica</button>
         </a>
+
+        <form action="{{ route('comics.destroy', $comic) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button class="btn btn-danger">elimina</button>
+        </form>
+
     </div>
 </div>
 
