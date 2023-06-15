@@ -69,7 +69,7 @@
                 <h4>FOLLOW US</h4>
                 <ul>
                     <li><a href="#"><img src="{{ Vite::asset('resources/images/footer-facebook.png') }}" alt=""></a></li>
-                    <li><a href="#"><img src="{{ Vite::asset('resourcesimages/footer-twitter.png') }}/" alt=""></a></li>
+                    <li><a href="#"><img src="{{ Vite::asset('resources/images/footer-twitter.png') }}/" alt=""></a></li>
                     <li><a href="#"><img src="{{ Vite::asset('resources/images/footer-youtube.png') }}" alt=""></a></li>
                     <li><a href="#"><img src="{{ Vite::asset('resources/images/footer-pinterest.png') }}" alt=""></a></li>
                     <li><a href="#"><img src="{{ Vite::asset('resources/images/footer-periscope.png') }}" alt=""></a></li>

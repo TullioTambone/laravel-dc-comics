@@ -12,8 +12,16 @@
     <div class="container card-section p-5">
 
 
-        <div class="row d-flex justify-content-center align-items-center text-white">
-            <h1>Welcome</h1>
+        <div class="d-flex justify-content-center align-items-center text-white flex-column">
+            <h1 class="my-4">Welcome</h1>
+
+
+            <a href="{{ route('comics.create') }}">
+                <span id="load-more">
+                    crea il tuo fumetto
+                </span>
+            </a>
+            
         </div>
         
     </div>

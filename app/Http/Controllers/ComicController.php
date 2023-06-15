@@ -38,13 +38,13 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        $from_data = $request->all();
+        $form_data = $request->all();
 
         $new_comic = new Comic();
-        $new_comic->fill( $from_data );
+        $new_comic->fill( $form_data );
         $new_comic->save();
 
-        return redirect()->route('crud.index');
+        return redirect()->route('comics.index');
     }
 
     /**
