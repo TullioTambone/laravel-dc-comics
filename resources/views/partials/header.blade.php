@@ -19,7 +19,7 @@
 
 
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                         <a class="nav-link" href="#">CHARACTERS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">COMICS</a>
+                        <a class="nav-link" href="{{ route('comics.index') }}">COMICS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">MOVIES</a>

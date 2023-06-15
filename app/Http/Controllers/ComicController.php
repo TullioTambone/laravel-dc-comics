@@ -14,11 +14,10 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $title = 'home';
-        $comicsArray = config('comics');
+        $comicsArray = config('comics.comic');
         $arrayComic = Comic::All();
     
-        return view('pages.crud.index', compact('title', 'comicsArray', 'arrayComic'));
+        return view('pages.crud.index', compact('comicsArray', 'arrayComic'));
     }
 
     /**
@@ -28,7 +27,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.crud.create');
     }
 
     /**
@@ -39,7 +38,13 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $from_data = $request->all();
+
+        $new_comic = new Comic();
+        $new_comic->fill( $from_data );
+        $new_comic->save();
+
+        return redirect()->route('crud.index');
     }
 
     /**
@@ -50,7 +55,9 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+        //$comicId = Comic::findOrFail($id);
+
+        return view('pages.crud.show', compact('comic'));
     }
 
     /**

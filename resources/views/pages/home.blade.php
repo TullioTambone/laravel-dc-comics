@@ -10,20 +10,12 @@
 </div>
 <div class="container-fluid" id="card-section">
     <div class="container card-section p-5">
-        <span id="current-series">
-            CURRENT SERIES
-        </span>
 
-        <div class="row d-flex justify-content-center align-items-center">
-            @foreach( $comicsArray as $elem )
-            <div class="my-card col-12 col-md-4 col-lg-2">
-                <img src="{{$elem['thumb']}}" alt="">
-                <h6 class="mt-1">{{$elem['series']}}</h6>
-            </div>
-            @endforeach
+
+        <div class="row d-flex justify-content-center align-items-center text-white">
+            <h1>Welcome</h1>
         </div>
         
-        <span id="load-more">LOAD MORE</span>
     </div>
     <div class="container-fluid" id="buy">
         <div class="container p-4" id="buy-section">
