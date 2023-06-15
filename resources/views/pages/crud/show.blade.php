@@ -14,6 +14,10 @@
             <img src="{{$comic['thumb']}}" alt="" style="width:150px">
             <p class="mt-2">{{$comic['description']}}</p>
         </div>
+
+        <a href="{{ route('comics.edit', $comic) }}">
+            <button class="btn btn-primary">modifica</button>
+        </a>
     </div>
 </div>
 
