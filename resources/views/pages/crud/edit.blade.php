@@ -4,6 +4,16 @@
 @section('content')
     <h1 class="text-center">Crea il tuo fumetto</h1>
     <div class="container p-5">
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+        
         <form action="{{route('comics.update', $comic)}}" method="POST">
             @csrf
             @method('PUT')

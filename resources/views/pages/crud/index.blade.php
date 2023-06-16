@@ -14,7 +14,11 @@
         <span id="current-series">
             CURRENT SERIES
         </span>
-
+        @if(Session::has('success'))
+        <div class="alert alert-success">
+            {!! session::get('success') !!}
+        </div>
+        @endif
         <div class="row d-flex justify-content-center align-items-center">
 
             @foreach( $arrayComic as $element )
